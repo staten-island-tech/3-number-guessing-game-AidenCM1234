@@ -14,7 +14,10 @@ while win == 0:
     elif guess > random_int:
         print(f"Lower then {guess}")
         guess_history.append(guess)
+        print(f"You tried{guess_history}")
+
  
     elif guess < random_int:
         print(f"Higher then {guess}")
         guess_history.append(guess)
+        print(f"You tried{guess_history}")
