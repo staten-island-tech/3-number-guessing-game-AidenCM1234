@@ -1,12 +1,13 @@
 win = 0
 import random
-random_int = random.randint(1, 10)
-print(f"Random integer: {random_int}")
+random_int = random.randint(1, 1000)
+#print(f"Random integer: {random_int}")
 
 guess_history=[]
 while win == 0:
     guess=(int(input("Guess a number 1-10: ")))
     if guess == random_int:
+        guess_history.append(guess)
         print("You gamble succefuly")
         win=1
         print(f"You guessed{guess_history}")
